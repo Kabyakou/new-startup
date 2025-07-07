@@ -1,3 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
 /* styles.css or input.css */
 @import "tailwindcss";
+
+
+:root {
+    --qube-primary: #000000;
+    --qube-accent: #0066FF;
+    --qube-light: #FFFFFF;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #000000 0%, #001A33 100%);
+}
+
+.qube-card {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.qube-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.marquee {
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.feature-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+@media (max-width: 768px) {
+    .feature-diagonal {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    }
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--qube-accent);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
