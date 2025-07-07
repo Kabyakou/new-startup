@@ -6,10 +6,14 @@ import { HeroSectionComponent } from './hero-section/hero-section.component';
 
 @Component({
   selector: 'app-root',
+<<<<<<< Updated upstream
 
 
   imports: [NavbarComponent,RouterOutlet,HeroSectionComponent],
 
+=======
+  imports: [RouterOutlet, NavbarComponent],
+>>>>>>> Stashed changes
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
