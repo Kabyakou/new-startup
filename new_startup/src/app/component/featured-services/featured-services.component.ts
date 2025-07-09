@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
-import { CtaSectionComponent } from '../cta-section/cta-section.component';
+import { TestmonialsSectionComponent } from '../testmonials-section/testmonials-section.component';
 
 @Component({
-  selector: 'app-testmonials-section',
-  imports: [CtaSectionComponent],
-  templateUrl: './testmonials-section.component.html',
-  styleUrl: './testmonials-section.component.css'
+  selector: 'app-featured-services',
+  imports: [TestmonialsSectionComponent],
+  templateUrl: './featured-services.component.html',
+  styleUrl: './featured-services.component.css'
 })
-export class TestmonialsSectionComponent {
+export class FeaturedServicesComponent {
 
 }
-
 
 
 // Mobile menu toggle functionality
@@ -41,4 +40,3 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 });
-
