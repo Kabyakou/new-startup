@@ -1,0 +1,22 @@
+ .timeline-thumbnail {
+            transition: transform 0.2s ease;
+        }
+        .timeline-thumbnail:hover {
+            transform: scale(1.1);
+        }
+        .track::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #e2e8f0;
+            z-index: 1;
+        }
+        .progress-bar {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+        }
+        .playhead {
+            filter: drop-shadow(0 0 2px rgba(0,0,0,0.3));
+        }

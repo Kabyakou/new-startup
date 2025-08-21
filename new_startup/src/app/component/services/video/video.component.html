@@ -1,1 +1,190 @@
-<p>video works!</p>
+   
+<div class="bg-gray-50 font-sans antialiased text-gray-800">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-8">
+            <div class="flex items-center">
+                <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mr-3">
+                    <i class="fas fa-cube text-white text-xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-indigo-600">Qube Digital</h1>
+            </div>
+            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-medium transition flex items-center">
+                <i class="fas fa-cloud-upload-alt mr-2"></i> Export Project
+            </button>
+        </header>
+
+        <!-- Main Editor Area -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <!-- Video Preview Area -->
+            <div class="relative bg-black aspect-video flex items-center justify-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/797e463c-c531-4718-b313-9aac9c082041.png" alt="Video preview placeholder showing a professional workspace with computer screens displaying editing software in a tech startup environment" class="w-full h-full object-contain" id="videoPreview">
+                <div class="absolute inset-0 flex items-center justify-center" id="videoControls">
+                    <button class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white hover:bg-opacity-30 transition">
+                        <i class="fas fa-play text-2xl"></i>
+                    </button>
+                </div>
+                <div class="absolute bottom-4 left-4 right-4">
+                    <div class="relative h-1 bg-gray-700 bg-opacity-50 rounded-full">
+                        <div class="progress-bar absolute top-0 left-0 h-full rounded-full" style="width: 35%"></div>
+                        <div class="playhead absolute w-3 h-3 bg-white rounded-full -top-1" style="left: 35%; transform: translateX(-50%)"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Editing Controls -->
+            <div class="p-4 border-b">
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center">
+                        <i class="fas fa-cut mr-2 text-indigo-600"></i> Cut
+                    </button>
+                    <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center">
+                        <i class="fas fa-cut mr-2 text-indigo-600"></i> Split
+                    </button>
+                    <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center">
+                        <i class="fas fa-volume-up mr-2 text-indigo-600"></i> Audio
+                    </button>
+                    <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center">
+                        <i class="fas fa-text-height mr-2 text-indigo-600"></i> Text
+                    </button>
+                    <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center">
+                        <i class="fas fa-magic mr-2 text-indigo-600"></i> Effects
+                    </button>
+                    <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center">
+                        <i class="fas fa-sliders-h mr-2 text-indigo-600"></i> Adjust
+                    </button>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="p-4 bg-gray-50">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="font-medium">Timeline</h3>
+                    <div class="flex gap-2">
+                        <button class="w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded flex items-center justify-center">
+                            <i class="fas fa-expand text-xs"></i>
+                        </button>
+                        <button class="w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded flex items-center justify-center">
+                            <i class="fas fa-cog text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Timeline Tracks -->
+                <div class="space-y-4">
+                    <!-- Video Track -->
+                    <div class="bg-white rounded-lg p-2 shadow">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-video text-indigo-600 mr-2"></i>
+                            <span class="text-sm font-medium">Video Track 1</span>
+                        </div>
+                        <div class="relative h-12 track">
+                            <div class="absolute inset-0 overflow-x-auto whitespace-nowrap">
+                                <div class="inline-flex h-full items-center gap-1">
+                                    <!-- Video Clips -->
+                                    <div class="timeline-thumbnail w-32 h-10 bg-gray-200 rounded border border-gray-300 flex-shrink-0 overflow-hidden">
+                                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ed2ebd92-1ef7-4217-b335-6fc3b4dcc6f2.png" alt="Video clip thumbnail showing business team meeting in modern office" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="timeline-thumbnail w-24 h-10 bg-gray-200 rounded border border-gray-300 flex-shrink-0 overflow-hidden">
+                                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b272e988-9e99-4c19-aa33-e21c16771d08.png" alt="Video clip thumbnail showing drone footage of city skyline at sunset" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="timeline-thumbnail w-36 h-10 bg-gray-200 rounded border border-gray-300 flex-shrink-0 overflow-hidden">
+                                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e629f5b1-7c69-4d75-b261-9599c36e18b4.png" alt="Video clip thumbnail showing product demonstration with close-up shots" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="playhead absolute w-0.5 h-full bg-indigo-600 top-0" style="left: 35%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Audio Track -->
+                    <div class="bg-white rounded-lg p-2 shadow">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-music text-indigo-600 mr-2"></i>
+                            <span class="text-sm font-medium">Audio Track 1</span>
+                        </div>
+                        <div class="relative h-12 track">
+                            <div class="absolute inset-0">
+                                <div class="h-4 bg-indigo-100 rounded-full" style="width: 85%"></div>
+                            </div>
+                            <div class="playhead absolute w-0.5 h-full bg-indigo-600 top-0" style="left: 35%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asset Library -->
+            <div class="p-4 border-t bg-gray-50">
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="font-medium">Assets</h3>
+                    <div class="flex gap-2">
+                        <button class="px-3 py-1 text-xs bg-indigo-100 text-indigo-600 rounded hover:bg-indigo-200">
+                            <i class="fas fa-plus mr-1"></i> Import
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                    <!-- Media Assets -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200 group">
+                        <div class="aspect-video bg-gray-100 flex items-center justify-center relative">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/93f0bc63-9349-4a8c-834c-cb48d6679630.png" alt="Stock video thumbnail showing business presentation with charts" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                                    <i class="fas fa-plus text-indigo-600"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="text-xs text-gray-500 truncate">presentation.mp4</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200 group">
+                        <div class="aspect-video bg-gray-100 flex items-center justify-center relative">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c822ae82-10b2-4f90-85f6-3e5c128491a4.png" alt="Stock video thumbnail showing office collaboration scene" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                                    <i class="fas fa-plus text-indigo-600"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="text-xs text-gray-500 truncate">meeting.mp4</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200 group">
+                        <div class="aspect-video bg-gray-100 flex items-center justify-center relative">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b5a07164-7d19-4e34-85a7-bfa9d173bc23.png" alt="Stock video thumbnail showing technology devices and gadgets" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                                    <i class="fas fa-plus text-indigo-600"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="text-xs text-gray-500 truncate">tech.mp4</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200 group">
+                        <div class="aspect-video bg-gray-100 flex items-center justify-center relative">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/34299091-e445-46b6-8e05-1273b5c844c3.png" alt="Stock video thumbnail showing aerial view of corporate campus" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                                <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                                    <i class="fas fa-plus text-indigo-600"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="text-xs text-gray-500 truncate">aerial.mp4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
