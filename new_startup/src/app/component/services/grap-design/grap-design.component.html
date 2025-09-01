@@ -1,1 +1,15 @@
-<p>grap-design works!</p>
+<body ng-controller="MainController as main">
+
+    <div class="container">
+        <h2>Our Graphic Design Services</h2>
+        <div class="grid">
+            <div class="card" ng-repeat="service in main.services">
+                <img ng-src="{{service.image}}" alt="{{service.title}}" />
+                <div class="card-content">
+                    <h3 class="card-title">{{Services.title}}</h3>
+                    <p class="card-desc">{{Services.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
