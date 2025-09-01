@@ -1,0 +1,58 @@
+ /* Custom animations */
+    @keyframes spin-reverse {
+        from {
+            transform: rotate(360deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    .animate-spin-reverse {
+        animation: spin-reverse 1s linear infinite;
+    }
+
+    /* Smooth transitions */
+    .transition-all {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Gradient text fix for better browser support */
+    .bg-clip-text {
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Hover effects */
+    .group:hover .group-hover\\:translate-x-1 {
+        transform: translateX(0.25rem);
+    }
+
+    /* Focus states for accessibility */
+    button:focus {
+        outline: 2px solid #f97316;
+        outline-offset: 2px;
+    }
+
+    /* Mobile responsiveness improvements */
+    @media (max-width: 768px) {
+        .text-6xl {
+            font-size: 3rem;
+        }
+
+        .text-7xl {
+            font-size: 4rem;
+        }
+    }
+
+    /* Animation delays */
+    .delay-1000 {
+        animation-delay: 1s;
+    }
+
+    .delay-2000 {
+        animation-delay: 2s;
+    }
